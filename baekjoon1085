@@ -1,0 +1,8 @@
+nums = list(map(int, input().split()))
+x, y, w, h = nums
+
+if (1 <= w <= 1000) and (1 <= h <= 1000) and (0 <= x <= (w-1)) and (0 <= y <= (h-1)):
+    min_dist = min(x, y, w-x, h-y)
+    print(min_dist)
+else:
+    print("error")
